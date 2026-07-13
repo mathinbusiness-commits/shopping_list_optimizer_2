@@ -1,0 +1,59 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Chain {
+  id     String  @id @default(cuid())
+  name   String
+  slug   String  @unique
+  stores Store[]
+}
+
+model Store {
+  id      String @id @default(cuid())
+  chainId String
+  chain   Chain  @relation(fields: [chainId], references: [id])
+  name    String
+  address String
+  lat     Float
+  lng     Float
+  city    String @default("CDMX")
+
+  prices StorePrice[]
+}
+
+model Product {
+  id            String  @id @default(cuid())
+  canonicalName String
+  category      String?
+  unit          String?
+  // mapa cadena -> término de búsqueda en su sitio, ej. { "walmart": "leche entera 1l" }
+  searchTerms   Json
+
+  prices StorePrice[]
+}
+
+model StorePrice {
+  id        String   @id @default(cuid())
+  storeId   String
+  productId String
+  store     Store    @relation(fields: [storeId], references: [id])
+  product   Product  @relation(fields: [productId], references: [id])
+  price     Float
+  inStock   Boolean  @default(true)
+  rawTitle  String?
+  url       String?
+  scrapedAt DateTime @default(now())
+
+  @@unique([storeId, productId])
+}

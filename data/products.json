@@ -1,0 +1,22 @@
+[
+  { "canonicalName": "Leche entera 1L", "category": "Lácteos", "unit": "1L", "basePriceMXN": 24, "searchTerms": { "walmart": "leche entera 1l", "bodega-aurrera": "leche entera 1 litro" } },
+  { "canonicalName": "Huevo blanco 30 pzas", "category": "Lácteos y huevo", "unit": "30 pz", "basePriceMXN": 95, "searchTerms": { "walmart": "huevo blanco 30 piezas", "bodega-aurrera": "huevo blanco cartera 30" } },
+  { "canonicalName": "Pan de caja blanco", "category": "Panadería", "unit": "680g", "basePriceMXN": 38, "searchTerms": { "walmart": "pan de caja blanco", "bodega-aurrera": "pan de caja blanco" } },
+  { "canonicalName": "Arroz 1kg", "category": "Abarrotes", "unit": "1kg", "basePriceMXN": 28, "searchTerms": { "walmart": "arroz 1kg", "bodega-aurrera": "arroz blanco 1 kilo" } },
+  { "canonicalName": "Frijol negro 1kg", "category": "Abarrotes", "unit": "1kg", "basePriceMXN": 32, "searchTerms": { "walmart": "frijol negro 1kg", "bodega-aurrera": "frijol negro 1 kilo" } },
+  { "canonicalName": "Aceite vegetal 1L", "category": "Abarrotes", "unit": "1L", "basePriceMXN": 42, "searchTerms": { "walmart": "aceite vegetal 1l", "bodega-aurrera": "aceite vegetal 1 litro" } },
+  { "canonicalName": "Azúcar estándar 1kg", "category": "Abarrotes", "unit": "1kg", "basePriceMXN": 24, "searchTerms": { "walmart": "azucar estandar 1kg", "bodega-aurrera": "azucar 1 kilo" } },
+  { "canonicalName": "Café soluble 200g", "category": "Abarrotes", "unit": "200g", "basePriceMXN": 89, "searchTerms": { "walmart": "cafe soluble 200g", "bodega-aurrera": "cafe soluble frasco" } },
+  { "canonicalName": "Papel higiénico 12 rollos", "category": "Cuidado del hogar", "unit": "12 rollos", "basePriceMXN": 115, "searchTerms": { "walmart": "papel higienico 12 rollos", "bodega-aurrera": "papel higienico paquete 12" } },
+  { "canonicalName": "Jabón de tocador (3 pack)", "category": "Cuidado personal", "unit": "3 pz", "basePriceMXN": 35, "searchTerms": { "walmart": "jabon de tocador 3 pack", "bodega-aurrera": "jabon de bano 3 piezas" } },
+  { "canonicalName": "Detergente en polvo 1kg", "category": "Cuidado del hogar", "unit": "1kg", "basePriceMXN": 55, "searchTerms": { "walmart": "detergente en polvo 1kg", "bodega-aurrera": "detergente polvo 1 kilo" } },
+  { "canonicalName": "Pechuga de pollo 1kg", "category": "Carnes", "unit": "1kg", "basePriceMXN": 105, "searchTerms": { "walmart": "pechuga de pollo 1kg", "bodega-aurrera": "pechuga de pollo kilo" } },
+  { "canonicalName": "Atún en lata (3 pack)", "category": "Abarrotes", "unit": "3 pz", "basePriceMXN": 62, "searchTerms": { "walmart": "atun en agua 3 pack", "bodega-aurrera": "atun lata 3 piezas" } },
+  { "canonicalName": "Pasta para sopa 200g", "category": "Abarrotes", "unit": "200g", "basePriceMXN": 14, "searchTerms": { "walmart": "pasta para sopa 200g", "bodega-aurrera": "sopa pasta 200 gramos" } },
+  { "canonicalName": "Jitomate 1kg", "category": "Frutas y verduras", "unit": "1kg", "basePriceMXN": 28, "searchTerms": { "walmart": "jitomate 1kg", "bodega-aurrera": "jitomate kilo" } },
+  { "canonicalName": "Cebolla blanca 1kg", "category": "Frutas y verduras", "unit": "1kg", "basePriceMXN": 22, "searchTerms": { "walmart": "cebolla blanca 1kg", "bodega-aurrera": "cebolla kilo" } },
+  { "canonicalName": "Manzana roja 1kg", "category": "Frutas y verduras", "unit": "1kg", "basePriceMXN": 38, "searchTerms": { "walmart": "manzana roja 1kg", "bodega-aurrera": "manzana kilo" } },
+  { "canonicalName": "Plátano tabasco 1kg", "category": "Frutas y verduras", "unit": "1kg", "basePriceMXN": 18, "searchTerms": { "walmart": "platano tabasco 1kg", "bodega-aurrera": "platano kilo" } },
+  { "canonicalName": "Agua embotellada 1.5L (6 pack)", "category": "Bebidas", "unit": "6x1.5L", "basePriceMXN": 68, "searchTerms": { "walmart": "agua embotellada 1.5l six pack", "bodega-aurrera": "agua 1.5 litros paquete 6" } },
+  { "canonicalName": "Refresco de cola 2L", "category": "Bebidas", "unit": "2L", "basePriceMXN": 32, "searchTerms": { "walmart": "refresco de cola 2l", "bodega-aurrera": "refresco cola 2 litros" } }
+]

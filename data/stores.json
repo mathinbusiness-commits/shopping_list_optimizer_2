@@ -1,0 +1,50 @@
+[
+  {
+    "chain": "walmart",
+    "chainName": "Walmart",
+    "name": "Walmart Portal Centro",
+    "address": "Lorenzo Boturini 258, Tránsito, Cuauhtémoc, 06820, Ciudad de México",
+    "lat": 19.4189491,
+    "lng": -99.1306194
+  },
+  {
+    "chain": "walmart",
+    "chainName": "Walmart",
+    "name": "Walmart Tlalpan",
+    "address": "Calz. de Tlalpan 1037, Américas Unidas, Benito Juárez, 03610, Ciudad de México",
+    "lat": 19.3826473,
+    "lng": -99.1395689
+  },
+  {
+    "chain": "walmart",
+    "chainName": "Walmart",
+    "name": "Walmart Universidad",
+    "address": "Av. Universidad 936, Sta Cruz Atoyac, Benito Juárez, 03310, Ciudad de México",
+    "lat": 19.3696741,
+    "lng": -99.1654097
+  },
+  {
+    "chain": "walmart",
+    "chainName": "Walmart",
+    "name": "Walmart Miguel Ángel de Quevedo",
+    "address": "Av. Miguel Ángel de Quevedo 175, Oxtopulco, Coyoacán, 04318, Ciudad de México",
+    "lat": 19.3459058,
+    "lng": -99.1752777
+  },
+  {
+    "chain": "bodega-aurrera",
+    "chainName": "Bodega Aurrera",
+    "name": "Bodega Aurrera Niño Perdido",
+    "address": "Calle Niño Perdido / Av. Lázaro Cárdenas 303, Buenos Aires, Cuauhtémoc, 06780, Ciudad de México",
+    "lat": 19.4053496,
+    "lng": -99.1448404
+  },
+  {
+    "chain": "bodega-aurrera",
+    "chainName": "Bodega Aurrera",
+    "name": "Bodega Aurrera Eje Central",
+    "address": "Eje Central Lázaro Cárdenas 754, Niños Héroes de Chapultepec, Benito Juárez, 03440, Ciudad de México",
+    "lat": 19.3872001,
+    "lng": -99.1470787
+  }
+]
