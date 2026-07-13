@@ -43,8 +43,10 @@ next-env.d.ts
 
 /src/generated/prisma
 
-# base de datos local (se regenera con `npm run db:push && npm run db:seed`)
-/dev.db
+# dev.db SÍ se versiona a propósito: la app solo lee de ella en runtime (nunca
+# escribe), y Vercel necesita el archivo empaquetado en el deploy para funcionar
+# (ver next.config.ts outputFileTracingIncludes y src/lib/db.ts). Los archivos de
+# journal/wal/shm son estado transitorio de escritura local, esos sí se ignoran.
 /dev.db-journal
 /dev.db-wal
 /dev.db-shm

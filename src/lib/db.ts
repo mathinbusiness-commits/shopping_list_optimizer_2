@@ -5,7 +5,11 @@ import { PrismaClient } from "@/generated/prisma/client";
 const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient };
 
 function createPrismaClient() {
-  const adapter = new PrismaBetterSqlite3({ url: process.env.DATABASE_URL! });
+  // La app nunca escribe en la base de datos en tiempo de ejecución (solo lee) —
+  // el catálogo se puebla aparte con `npm run db:seed` / `npm run scrape`. Abrir en
+  // modo readonly es necesario además de correcto: en Vercel el archivo se sirve
+  // desde el bundle de la función serverless, cuyo filesystem es de solo lectura.
+  const adapter = new PrismaBetterSqlite3({ url: process.env.DATABASE_URL!, readonly: true });
   return new PrismaClient({ adapter });
 }
 
