@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AddressInput, type ResolvedOrigin } from "@/components/AddressInput";
+import { AIListAssistant } from "@/components/AIListAssistant";
 import { ShoppingListBuilder, type ListItem } from "@/components/ShoppingListBuilder";
 import { savePlan } from "@/lib/planStorage";
 
@@ -39,6 +40,16 @@ export default function PlanearPage() {
       </div>
 
       <AddressInput value={origin} onResolved={setOrigin} />
+
+      <AIListAssistant
+        onGenerated={(generated) => {
+          setItems((current) => {
+            const existingIds = new Set(current.map((i) => i.productId));
+            const toAdd = generated.filter((i) => !existingIds.has(i.productId));
+            return [...current, ...toAdd];
+          });
+        }}
+      />
       <ShoppingListBuilder items={items} onChange={setItems} />
 
       <div className="flex flex-col gap-2">

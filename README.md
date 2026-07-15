@@ -45,6 +45,28 @@ src/lib/         geocodificación, distancias, cliente de base de datos
 src/app/         páginas (/planear, /resultados) y rutas API
 ```
 
+## Asistente de IA para generar la lista (Gemini)
+
+En `/planear` hay un cuadro "✨ Generar lista con IA": describes para qué es la lista
+(ej. *"Lista de compras semanal de comida para una familia de 4, 2 niños y 2 adultos"*) y
+Gemini selecciona los productos del catálogo (`src/lib/gemini.ts`,
+`/api/asistente/generar-lista`) que encajan con esa petición.
+
+El modelo **solo puede elegir productos que ya existen en el catálogo**: la llamada a
+Gemini usa `responseSchema` con un `enum` de los IDs válidos, así que no hay riesgo de que
+alucine un producto que no tenga precio en la base de datos — es una restricción a nivel
+de decodificación del modelo, no una validación posterior.
+
+Para usarlo, consigue una API key gratis en <https://aistudio.google.com/apikey> y
+ponla en `.env`:
+
+```bash
+GEMINI_API_KEY=tu-api-key-aqui
+```
+
+Si falta la key, el botón muestra un error claro ("Falta configurar GEMINI_API_KEY...")
+en vez de fallar de forma confusa.
+
 ## Sobre el scraping real: limitación conocida
 
 El adapter de Walmart (`scraper/adapters/walmart.ts`) está implementado correctamente
